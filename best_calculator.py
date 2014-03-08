@@ -1,4 +1,4 @@
-def best_calculator(numerator, denumerator, n):
+def best_calculator(numerator, denumerator, n=10):
     result = ""
     assert n > 0
     while True:
