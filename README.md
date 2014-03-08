@@ -6,7 +6,7 @@ Best fraction calculator written in python. I've not found better calculator yet
 Feature: Possibly infinite number of decimal digits.
 
 
-http://peterparada.com/calculator
+http://www.peterparada.com/calculator
 
 Examples:
 ---
