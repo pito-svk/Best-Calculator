@@ -1,7 +1,8 @@
-def best_calculator(numerator, denumerator, n=10):
+def best_calculator(numerator, denumerator, n):
     result = ""
+    assert n > 0
     while True:
-        if numerator >= denumerator:
+        if numerator > denumerator:
             value = numerator / denumerator
             result += str(value)
             numerator -= (value*denumerator)
@@ -10,7 +11,7 @@ def best_calculator(numerator, denumerator, n=10):
             elif "." not in result:
                 result += "."
             if len(result[result.index("."):]) == n+1:
-                return result
+                return float(result)
             increase = False
         else:
             if "." not in result:
@@ -19,3 +20,7 @@ def best_calculator(numerator, denumerator, n=10):
                 result += "0"
             numerator *= 10
             increase = True
+            if len(result[result.index("."):]) == n+1:
+                return float(result)
+
+        
