@@ -1,7 +1,7 @@
 def best_calculator(numerator, denumerator, n):
     result = ""
     while True:
-        if numerator > denumerator:
+        if numerator >= denumerator:
             value = numerator / denumerator
             result += str(value)
             numerator -= (value*denumerator)
